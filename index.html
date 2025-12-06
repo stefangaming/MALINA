@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background: #8a2be2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    border: 5px solid red;
+    border-radius: 15px;
+    animation: borderFlash 1s infinite;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+}
+
+#big {
+    width: 600px;
+}
+
+.bottom-text {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+@keyframes borderFlash {
+    0%, 50%, 100% { border-color: red; }
+    25%, 75% { border-color: white; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="me.png">
+    <img src="heart.png">
+    <img id="big" src="mal.png">
+</div>
+<div class="bottom-text">:) &lt;33</div>
+</body>
+</html>
